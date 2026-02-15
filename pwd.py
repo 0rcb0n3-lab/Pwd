@@ -1,8 +1,6 @@
 
 def is_very_long(password):
-    if len(password) > 12:
-        return True
-    return False
+    return len(password) > 12
 
 
 def has_digit(password):
@@ -27,7 +25,8 @@ def has_symbols(password):
 
 def main():
     func_list = [
-        is_very_long, has_digit,
+        is_very_long,
+        has_digit,
         has_upper_letters,
         has_lower_letters,
         has_symbols,
